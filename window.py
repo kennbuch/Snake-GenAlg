@@ -89,7 +89,7 @@ def visual(brain=None, human_player=True):
     directions = ['up', 'down', 'left', 'right']
     hunger = 0
     while(True):
-        sleep(0.03)
+        sleep(0.02)
         direction = ''
         
         if not human_player:

@@ -6,31 +6,33 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 if __name__ == '__main__':
-    # retrive user input 
+    #---------- retrive user input ----------
     population_size = int(input('population size (integer > 0): '))
     training_iterations = int(input('training iterations (integer >= 0/enter 0 to not train): '))
     test_iterations = int(input('testing iterations (integer >= 0/enter 0 to not test): '))
-    randomize_weights_input = bool(input('would you like to randomize the initial weights (Y/N): '))
+    randomize_weights_input = input('would you like to randomize the initial weights (Y/N): ')
     randomize_weights = None
     if randomize_weights_input == 'Y' or randomize_weights_input == 'y':
         randomize_weights = True
     elif randomize_weights_input == 'N' or randomize_weights_input == 'n':
         randomize_weights = False
 
+    input_file = None
     if not randomize_weights:
         input_file = input('choose the csv file you want to imort the weights from (eg: "data.csv"): ')
 
-    save_weights = input('would you like to save the final weights of the best snake? (Y/N): ')
+    save_weights_input = input('would you like to save the final weights of the best snake? (Y/N): ')
     save_weights = None
-    if save_weights == 'Y' or save_weights == 'y':
+    if save_weights_input == 'Y' or save_weights_input == 'y':
         save_weights = True
-    elif save_weights == 'N' or save_weights == 'n':
+    elif save_weights_input == 'N' or save_weights_input == 'n':
         save_weights = False
 
     if save_weights:
         output_file = input('choose the csv file you want to save the weights to (eg: "data.csv"): ')
 
     input('press enter to begin: ')
+#-------------------------------------------
 
     ga = GeneticAlgorithm(population_size, 20, randomize_weights=randomize_weights, input_file=input_file)
     
