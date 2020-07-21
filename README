@@ -6,9 +6,9 @@ after running the program you will be prompted to enter information about how to
         training iterations (integer >= 0/enter 0 to not train):
         testing iterations (integer >= 0/enter 0 to not test):
         would you like to randomize the initial weights (Y/N):
-        choose the csv file you want to imort the weights from (eg: "data.csv"): #only appears if you answered 'N' to the above question
+        choose the csv file you want to imort the weights from (eg: "data.csv"): #only appears if you answered 'N' to the above
         would you like to save the final weights of the best snake? (Y/N):
-        choose the csv file you want to save the weights to (eg: "data.csv"): #only appears if you answered 'Y' to the above question
+        choose the csv file you want to save the weights to (eg: "data.csv"): #only appears if you answered 'Y' to the above
 
 A csv file of neural net weights that have already been trained using this program has been provided (data.csv). 
 You can use this file or you can train your own neural net. If you want to just test and see the neural net in the 
