@@ -1,0 +1,27 @@
+to run the program type "python main.py" on the command line
+
+after running the program you will be prompted to enter information about how to train the neural net.
+
+        population size (integer > 0):
+        training iterations (integer >= 0/enter 0 to not train):
+        testing iterations (integer >= 0/enter 0 to not test):
+        would you like to randomize the initial weights (Y/N):
+        choose the csv file you want to imort the weights from (eg: "data.csv"): #only appears if you answered 'N' to the above question
+        would you like to save the final weights of the best snake? (Y/N):
+        choose the csv file you want to save the weights to (eg: "data.csv"): #only appears if you answered 'Y' to the above question
+
+A csv file of neural net weights that have already been trained using this program has been provided (data.csv). 
+You can use this file or you can train your own neural net. If you want to just test and see the neural net in the 
+data.csv file answer the prompts as follows:
+
+        population size (integer > 0): 1
+        training iterations (integer >= 0/enter 0 to not train): 0
+        testing iterations (integer >= 0/enter 0 to not test): 100
+        would you like to randomize the initial weights (Y/N): N
+        choose the csv file you want to imort the weights from (eg: "data.csv"): data.csv
+        would you like to save the final weights of the best snake? (Y/N): N
+        press enter to begin: <enter>
+        
+This will not train a neural net, but instead inject the data from data.csv into its own neural net, test that 
+neural net 100 times, give you the average/max length of the snake in those 100 iteration, then open a window 
+where you can see the neural net play the game. 
