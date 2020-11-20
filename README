@@ -11,7 +11,7 @@ after running the program you will be prompted to enter information about how to
         choose the csv file you want to save the weights to (eg: "data.csv"): #only appears if you answered 'Y' to the above
 
 A csv file of neural net weights that have already been trained using this program has been provided (data.csv). 
-You can use this file or you can train your own neural net. If you want to just test and see the neural net in the 
+You can use this file or you can train your own neural net. If you just want to test and see the neural net in the 
 data.csv file answer the prompts as follows:
 
         population size (integer > 0): 1
